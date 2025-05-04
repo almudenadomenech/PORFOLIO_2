@@ -237,42 +237,58 @@ body{
 
 
 /* Seccion experiencia */
-.experiencia .titulo-seccion{
+.experiencia .titulo-seccion {
     color: #2acf7f;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     font-size: 30px;
 }
-.experiencia .fila{
+
+.experiencia .fila {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.experiencia .fila .col{
-    width: 48%;
+
+.experiencia .fila .col {
+    width: 100%; /* Cambio a 100% para que ocupe toda la tarjeta */
     background-color: #161b22;
     border: 1px solid #2acf7f;
     padding: 20px 40px;
 }
-.experiencia .fila .col h3{
+
+.experiencia .fila .col h3 {
     color: #91e0ba;
     text-align: center;
     padding: 20px 0;
 }
-.experiencia .fila .col .info{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
+
+.experiencia .fila .col .info {
+    display: flex; /* Cambié grid por flex para apilar todos los items en una columna */
+    flex-direction: column; /* Los elementos estarán en una columna */
+    gap: 15px; /* Espacio entre los items */
 }
-.experiencia .fila .col .info .item{
+
+.experiencia .fila .col .info .item {
     color: #fff;
-    position: relative;
+    display: flex; /* Asegura que los iconos y los textos estén alineados en una fila */
+    align-items: center; /* Centra verticalmente los iconos y los textos */
+    margin-bottom: 15px; /* Da espacio entre cada item */
 }
-.experiencia .fila .col .info .item span{
-    display: block;
-    margin-left: 25px;
+
+.experiencia .fila .col .info .item i {
+    font-size: 20px; /* Tamaño adecuado para los iconos */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
+
+.experiencia .fila .col .info .item span {
+    display: inline-block; /* Los span estarán uno al lado del otro */
+    margin-right: 10px; /* Espacio entre el skill y el nivel */
+}
+
+
+
 
 /* SECCION PORFOLIO */
 
